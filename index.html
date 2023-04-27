@@ -1,0 +1,80 @@
+<html>
+
+<head>
+<title>BTD - Bezier</title>
+<meta charset="utf-8">
+<script src="p5.min.js"></script>
+<script src="BezierSketch.js"></script>
+<link href="../Styles.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://use.typekit.net/nnv2tdn.css">
+<link rel="icon" type="image/x-icon" href="../Images/favicon.png">
+</head>
+
+
+<body>
+    <video id = "bgVideo" width="1920" height="1080" autoplay loop muted>
+		<source src="videos/BezierMotion.mp4" type="video/mp4">
+		</video>	
+	<div id="videoDivider"></div>
+
+
+    <div id="InfoContainer">
+        <div id="LeftCol">    
+        </div>
+
+        <div id="CenterCol">
+            <!-- <div class="SpaceMaker" style="height: 5px"></div> -->
+            <div class="InfoBlock">
+                <div class="textBlock">
+                    <h2>What is a Bezier curve?</h2>
+
+                    <p>Curves in the binary world of pixels and bytes, such a thing can in fact exist. In the real world  the curve of the wheel helps it roll smoothly, the curve of the arch gives it its strength, curves in the digital realm occupy many roles from functional to aesthetic.</p> <p> The Bezier curve like many tools used in graphic design has its roots in complicated mathematical formulas that dictate precisely how the curve functions. For the most part we will be ignoring that math and instead focus on a few key components that make up the Bezier curve. </p><p> A Bezier curve is a set of points that are connected to each other, each point that makes up the curve can have points that let you further control the shape and complexity of a curve. 
+                    
+                    Bezier Curves can be made up of end points and control points, end points are where each point of the curve connects and passes through, control points control the shape of the curve between end points. </p>
+                </div>
+                <div class="InteractiveBorder">
+                    <div id="InteractiveBlock1">
+                        <div id="BezierDemo1"></div>
+                    </div>
+                    <p class="explainerTextWide">This demo shows off a <span class="brmed">Cubic Bezier Curve.</span> Dragging the large control points dictates where the curve begins and ends, dragging the small control points controls how the Bezier Curves. If you would like to reset the curve to its initial position hit the <span class="brmed">Reset Curve</span> Curve button up top.</p>	
+                </div>
+            </div>
+            <div class="SpaceMaker" style="height: 200px"></div>
+            <div class="InfoBlock">
+                <div class="textBlock">
+                    <h2>How do you use them.</h2>
+                    
+                    <p>Curves in 2D are simple: You click, you drag. That’s it, click the control points and drag the control points, the curve will update to show you the changes you made. In 3D its relatively the same click and drag, but now in 3D! Not all Bezier curves are equal though. The simplest is the <span class="brmed">Linear Bezier Curve</span> and ironically enough has no curves at all as it has no control points to help bend the curve. Next in the line comes <span class="brmed">Quadratic Bezier Curve</span>, these lovely curves sport a single control point shared between end points. And finally is the <span class="brmed">Cubic Bezier Curve</span> which has two control points allowing for greater control over how the curve looks.</p>
+                </div>
+                <div class="InteractiveBorder">
+                <div id="InteractiveBlock2">
+                    <div id="BezierDemo2"></div>
+                </div>
+                <p class="explainerTextWide">This demo shows off the power of curves when it comes to animation. This circle only has two keyframes, one at the top and one at the bottom, its the Bezier curves that are doing all the work in this instance.</p>	
+            </div>
+            </div>
+            <div class="SpaceMaker" style="height: 160px"></div>
+            <div class="InfoBlock">
+                
+                <div class="textBlock" style="width:60%; padding-right: 20rem;">
+                <h2>The power of curves.</h2>
+                <p>Bezier curves have many uses in the world of graphic design that range from visual to technical. On the visual side is something that all graphic designers are familiar with and that is vector art, or art drawn using many different Bezier curves combined together common vector art programs like Adobe Illustrator and Inkscape are the go-to tools to create complex and beautiful works of art using just Bezier curves. The thing about using Bezier curves to make art is that they are mathematical formulas and not pixels meaning they can be scaled up or down indefinitely and not loose quality. </p><p> more technical use for Bezier curves is the aptly named Curves adjustment found in many images editing software. When editing the curve of an image you control a simple curve that from that starts as a straight line ascending from left to right. By clicking and dragging on this curve you can change the brightness and contrast of an image to get the right look and feel with precision. Another technical use for curves is when animating. Animations can be plotted on a graph with usually the x-axis conveying time and the y-axis conveying some sort of property you want animated, like for example its position on the screen or how transparent it is.</p>
+                </div>
+            </div>
+            <div class="SpaceMaker" style="height: 100px"></div>
+        </div>
+      
+        <div id="RightCol"></div>
+    
+    </div>
+    <div id="MetalDivider"></div>   
+    <div id="bottomNav">
+        <a style="padding-right: 42vw;" href="../BlendModeSite/BlendMode.html" >&#8592;PREV </a>
+		
+		<a href="../NoiseSite/NoiseSite.html" >NEXT&#8594; </a>
+	</div>
+    <div id="MetalDivider"></div>
+    
+</body>
+
+</html>
